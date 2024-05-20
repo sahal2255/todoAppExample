@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: #f0e6df;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoContainer {
+    background-color: #ED9455;
+    width: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.input-section button {
+    padding: 10px;
+    border: none;
+    background-color: #FFBB70;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #FFA34D;
+}
+
+ul {
+    background-color: #FFBB70;
+    /* min-height: 200px; */
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    text-align: left;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    word-break: break-word;
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: #FFEC9E;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+ul li i {
+    color: #ff0000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 10px; /* Ensure the icon is separated from the text */
+}
+
+ul li i:hover {
+    color: #171616;
+}
